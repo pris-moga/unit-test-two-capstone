@@ -1,6 +1,10 @@
-const mongoose = require('mongoose');
+const mongoose = require("mongoose");
 
-let mongoDB = ;
+const dotenv = require("dotenv");
+
+dotenv.config();
+
+let mongoDB = process.env.MONGO_STRING;
 
 ////EXAMPLE////
 // Make sure to create .env file and use an environment variable
